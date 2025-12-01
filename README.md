@@ -1,5 +1,3 @@
-![alt logo](./images/logo.png)
-
 ## **Features**
 
 - High-performace Python web framework for building APIs with automatic OpenAPI & Swagger & ReDoc docs. 
