@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  background-color: #030712;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-base-900 text-slate-100 min-h-screen antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass-panel {
+  @apply bg-base-800/80 backdrop-blur-xl border border-white/5 rounded-3xl shadow-soft;
+}
+
+.section-padding {
+  @apply py-16 md:py-20;
+}
+
+.eyebrow {
+  @apply text-sm uppercase tracking-[0.25em] text-accent font-semibold;
+}
+
+.input {
+  @apply w-full rounded-2xl border border-white/10 bg-base-800/70 px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-accent focus:outline-none focus:ring-0;
+}
